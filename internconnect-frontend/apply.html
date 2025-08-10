@@ -1,0 +1,25 @@
+<!-- apply.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de Candidature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Formulaire de Candidature</h2>
+  <form action="../internconnect-backend/submit.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="nom" placeholder="Nom complet" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="telephone" placeholder="Téléphone" required>
+    <select name="programme" required>
+      <option value="">Choisir un programme</option>
+      <option value="marketing">Marketing</option>
+      <option value="IT">Informatique</option>
+    </select>
+    <input type="file" name="cv" accept=".pdf" required>
+    <label><input type="checkbox" name="consentement" required> J'accepte les conditions</label>
+    <button type="submit">Soumettre et payer</button>
+  </form>
+</body>
+</html>
